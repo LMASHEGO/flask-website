@@ -7,8 +7,22 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-  <h1>Welcome to My Website</h1>
-  <p>This is a test page.</p>
+ 
+<form action = "/submit" method="post">
+
+  <label for = "name">Name:</label><br>
+  <input type = "text" id = "name" name="name" required><br>
+
+  <label for = "email">Email:</label><br>
+  <input type = "email" id = "email" name = "email" required><br>
+
+  <label for = "message">Message:</label><br>
+  <textarea id="message" name = "message" rows="5" required></textarea><br>
+
+  <input type="submit" value="send message">
+
+</form>
+
   <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>

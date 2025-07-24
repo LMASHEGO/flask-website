@@ -1,0 +1,7 @@
+<h2>My Projects</h2>
+<ul>
+  {% for p in projects %}
+    <li><strong>{{ p.title }}</strong>: {{ p.desc }}</li>
+  {% endfor %}
+</ul>
+<a href="/">Back to Home</a>
